@@ -1,0 +1,217 @@
+* {
+    font-family: "Nunito" sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background-color: lawngreen;
+    color: #333;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+html::webkit ::-webkit-scrollbar{
+    width: 22px;
+}
+html::-webkit-scrollbar-track{
+    background: #223;
+}
+html::-webkit-scrollbar-thumb{
+    background: lawngreen;
+}
+body{
+    position:absolute;
+    background: #333 ;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    padding: 16px;
+}
+.btn{
+    padding: 5px 48px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.btn i{
+    padding: 0 8px;
+    font-size: 25px;
+}
+.btn:hover{
+    background: lawngreen;
+}
+.heading{
+    text-align: center;
+    margin: 0 50px;
+    font-size: 64px;
+    padding: 10px;
+    border-bottom: 1.6px solid #fff4;
+    color: #fff;
+}
+.heading span{
+    color: lawngreen;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100;
+    width: 400px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header  .user img{
+    height: 200px;
+    width: 200px;
+    border-radius: 2px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 8px solid lawngreen;
+}
+header  .user .name{
+    font-size: 40px; 
+    color: #fff;
+}
+header  .user  .post{
+   font-size: 32px;
+   color: #fff;
+}
+header .navbar{
+   width: 100%;
+   padding: 1px;
+}
+header  .navbar ul{
+    list-style: none;
+    padding: 16px 48px;
+}
+header  .navbar ul li a{
+   display: block;
+   padding: 3px;
+   margin: 20px 0;
+   background: #333;
+   color: #fff;
+   font-size: 32px;
+   border-radius: 60px;
+}
+header  .navbar ul li a:hover{
+    background: lawngreen;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 240px;
+    padding-left: 500px;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .info h3{
+    font-size: 25px;
+    color: lawngreen;
+    padding: 8px 0;
+    margin: 10px;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.contact .row .content{
+    flex: 1 1 480px;
+    padding: 0px;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 720px;
+    padding: 32px;
+    margin: 32px;
+    margin-bottom: 64px;
+}
+.contact .row form .box{
+    padding: 24px;
+    margin: 16px;
+    background: #333;
+    color: #fff;
+    text-transform: none;
+}
+.about .row .counter .box span{
+    font-size: 64px;
+    color: lawngreen;
+}
+.about .row .counter .box h3{
+    font-size: 32px;
+    color:#fff
+}
+.home h3{
+    font-size: 50px;
+    color: #fff;
+    padding: 0;
+}
+.home h3 span{
+    color: lawngreen;
+}
+.home p{
+    font-size: 25px;
+    color: #eee;
+    padding: 8px 0;
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.about .row .info{
+    flex: 1 1 400px;
+    padding: 0;
+}
+.about .row .info h3{
+    font-size: 25px;
+    color: lawngreen;
+    padding: 8px 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: #eee;
+    padding: 0 8px;
+
+}
+.about .row .counter{
+    flex:1 1 400px;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 200px;
+    background: #222;
+    text-align: center;
+    padding: 0;
+    margin: 20px;
+}
+.about .row .counter .box span{
+    font-size: 64px;
+    color: lawngreen;
+}
+.about .row .counter .box h3{
+    font-size: 32px;
+    color:#fff
+}
