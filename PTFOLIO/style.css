@@ -159,6 +159,17 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+    header {
+      text-align: center;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
 .home h3{
     font-size: 50px;
     color: #fff;
