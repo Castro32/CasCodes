@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Ysdxs+mNvlU9L/i1d52lfUzFh1pYgUif7mjZ6oL/F6Grm15a65cL9XQ2jvGbjW0lMLYwCwZtbOQ5LHj5nmE8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<header>
@@ -17,7 +18,9 @@
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
 				<li><a href="#contact">Contact</a></li>
+                
 				<li><a href="https://github.com/Castro32" target="_blank">Projects</a></li>
 			</ul>
 		</nav>
@@ -49,18 +52,60 @@
              </div>
             </div>
 		</section>
+        <section class="skills" id="skills">
+            <h1 class="heading"><span class="about">Skills &amp; </span>Expertise</h1>
+            <div class="counter">
+                <div class="row">
+                        <div class="box">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <h3>html</h3>
+                          </div>
+                          <div class="box">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <h3>css</h3>
+                          </div>
+                        <div class="col-md-6">
+                           <div class="box">
+                             <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                             <h3>javascript</h3>
+                           </div>
+                           <div class="box">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <h3>Mysql</h3>
+                           </div>       
+                        </div>                                         
+                </div>
+            </div>
+          </section> 
 		<section class="contact" id="contact">
             <h1 class="heading"><span class="about">Contact</span> me</h1>
-            <div class="row">
-             <div class="info">
-                 <h3><span>phone number:</span> +254114096574 </h3>
-                 <h3><span>email:</span> okanga.fidel@gmail.com</h3>
-				 <h3><span>twitter:</span>  https://www.twitter.com/Castro_fidel32</span></h3>
-                 <h3><span>instagram:</span>  https://www.instagram.com/Castro_fidel32</span></h3>
-			</div>
-			
-		  </section>
-		  
+            <div class="container">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <i class="fab fa-linkedin"></i>
+                  <a href="" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fab fa-twitter"></i>
+                  <a href="https://twitter.com/fidel_castro32/" target="_blank">Twitter</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fab fa-instagram"></i>
+                  <a href="https://www.instagram.com/fidel_castro32/" target="_blank">Instagram</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/+254114096574/" target="_blank">WhatsApp</a>
+                </div>
+              </div>
+              <form id="contact-form" method="post" action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+              </form>
+            </div>
+          </section> 
 	</main>
 	<footer>
 		<p>&copy; 2023 My Portfolio. All rights reserved.</p>

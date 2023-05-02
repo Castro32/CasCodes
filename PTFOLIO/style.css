@@ -13,7 +13,6 @@
     background-color: lawngreen;
     color: #333;
 }
-
 html{
     font-size: 10px;
     overflow-x: hidden;
@@ -66,7 +65,7 @@ header{
     top: 0;
     left: 0;
     z-index: 999;
-    height: 100;
+    height: 80;
     width: 400px;
     background: #1a1a1a;
     display: flex;
@@ -76,12 +75,12 @@ header{
     text-align: center;
 }
 header  .user img{
-    height: 200px;
+    height: 180px;
     width: 200px;
     border-radius: 2px;
     object-fit: cover;
-    margin-bottom: 16px;
-    border: 8px solid lawngreen;
+    margin-bottom: 5px;
+    border: 3px solid lawngreen;
 }
 header  .user .name{
     font-size: 40px; 
@@ -119,38 +118,105 @@ header  .navbar ul li a:hover{
     padding: 0 240px;
     padding-left: 500px;
 }
+.skills .row{
+    display: flexbox;
+    justify-content: left;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.skills .row .box{
+    width: 300px;
+    background: #222;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+}
+.skills .row .box span{
+    font-size: 64px;
+    color: lawngreen;
+}
+.skills .row .box h3{
+    font-size: 32px;
+    color:#fff
+}
 .contact .row{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
 }
-.contact .row .info h3{
-    font-size: 25px;
+#contact {
+    
+    padding: 60px 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  
+  .contact-item {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
     color: lawngreen;
-    padding: 8px 0;
-    margin: 10px;
-    font-weight: normal;
-    text-transform: lowercase;
-}
-.contact .row .content{
-    flex: 1 1 480px;
-    padding: 0px;
-    padding-bottom: 0;
-}
-.contact .row form{
-    flex: 1 1 720px;
-    padding: 32px;
-    margin: 32px;
-    margin-bottom: 64px;
-}
-.contact .row form .box{
-    padding: 24px;
-    margin: 16px;
-    background: #333;
+  }
+  
+  .contact-item a {
+    color: lawngreen;
+    text-decoration: none;
+  }
+  
+  .contact-item:hover a {
+    text-decoration: underline;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  form button {
+    background-color: blue;
     color: #fff;
-    text-transform: none;
-}
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: lawngreen;
+  }
+  
 .about .row .counter .box span{
     font-size: 64px;
     color: lawngreen;
@@ -159,6 +225,17 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+    header {
+      text-align: center;
+    }
+    .sidebar {
+      display: none;
+    }
+  }
 .home h3{
     font-size: 50px;
     color: #fff;
@@ -176,7 +253,7 @@ header  .navbar ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 10px 0;
 }
 .about .row .info{
@@ -186,13 +263,12 @@ header  .navbar ul li a:hover{
 .about .row .info h3{
     font-size: 25px;
     color: lawngreen;
-    padding: 8px 0;
+    padding: 10px 0;
     font-weight: normal;
 }
 .about .row .info h3 span{
     color: #eee;
     padding: 0 8px;
-
 }
 .about .row .counter{
     flex:1 1 400px;  
@@ -205,7 +281,7 @@ header  .navbar ul li a:hover{
     background: #222;
     text-align: center;
     padding: 0;
-    margin: 20px;
+    margin: 10px;
 }
 .about .row .counter .box span{
     font-size: 64px;
