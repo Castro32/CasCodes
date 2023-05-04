@@ -179,6 +179,7 @@ header  .navbar ul li a:hover{
     color: lawngreen;
     text-decoration: none;
   }
+ 
   
   .contact-item:hover a {
     text-decoration: underline;
@@ -225,17 +226,6 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
-@media only screen and (max-width: 767px) {
-    body {
-      font-size: 16px;
-    }
-    header {
-      text-align: center;
-    }
-    .sidebar {
-      display: none;
-    }
-  }
 .home h3{
     font-size: 50px;
     color: #fff;
@@ -291,3 +281,73 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
+@media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 48px;
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    body {
+      overflow-x: visible;
+    }
+    
+    header {
+      width: 100%;
+    }
+    
+    header .navbar ul {
+      display: none;
+    }
+    
+    header .navbar .menu-icon {
+      display: block;
+    }
+    
+    header .navbar .menu-icon i {
+      font-size: 32px;
+      color: #fff;
+    }
+    
+    header .navbar.active ul {
+      display: block;
+      background: #1a1a1a;
+    }
+    
+    header .navbar.active ul li {
+      margin: 10px 0;
+    }
+    
+    header .navbar.active ul li a {
+      font-size: 24px;
+    }
+    
+    .home {
+      padding: 0;
+      padding-left: 100px;
+    }
+    
+    .skills .row {
+      justify-content: center;
+    }
+    
+    .skills .row .box {
+      width: 250px;
+      margin: 10px;
+    }
+    
+    .contact .row {
+      justify-content: center;
+    }
+    
+    .contact .row .contact-item {
+      width: calc(40% - 10px);
+      margin-bottom: 20px;
+    }
+    
+    .about .row .counter .box {
+      width: 250px;
+      margin: 10px;
+    }
+  }
+  
