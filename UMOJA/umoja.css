@@ -1,0 +1,93 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: lawngreen;
+    color: #3333;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+html ::-webkit-scrollbar{
+    width: 22px;
+}
+html::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+body{
+    background: purple;
+    overflow-x: hidden;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+section{
+    min-height: 90vh;
+    padding: 16px;
+}
+header{
+    font-size: 16px;
+    padding: 10px 0;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-nav .hover{
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.navbar-nav .nav-link:hover{
+    color: blue;
+}
+#home {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    
+    flex-grow: 1;
+  }
+  
+  .container img {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .container h1,
+  .container h5,
+  .container p {
+    margin: 0;
+  }
+  
+  .container h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .container h5 {
+    font-size: 18px;
+    color: blue;
+  }
+  
+  .container p {
+    font-size: 14px;
+    color: blue;
+  }
+  
+  

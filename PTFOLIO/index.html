@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Ysdxs+mNvlU9L/i1d52lfUzFh1pYgUif7mjZ6oL/F6Grm15a65cL9XQ2jvGbjW0lMLYwCwZtbOQ5LHj5nmE8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 	<header>
@@ -19,8 +19,9 @@
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
 				<li><a href="#contact">Contact</a></li>     
-				<li><a href="https://github.com/Castro32" target="_blank">Projects</a></li>
+				
 			</ul>
 		</nav>
 	</header>
@@ -33,11 +34,13 @@
             <h1 class="heading"><span class="about">about</span> me</h1>
             <div class="row">
              <div class="info">
-                 <h3><span>name:</span> Fidel Castro </h3>
-                 <h3><span>age:</span> 21 years</h3>
-                 <h3><span>qualification:</span>BICT</h3>
-                 <h3><span>languages:</span>English and Kiswahili</h3>
-                 <a href="CasResume.pdf" download><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
+                 <h3><span>Name:</span> Fidel Castro </h3>
+                 <h3><span>Age:</span> 21 years</h3>
+                 <h3><span>Qualification:</span><abbr title="Bachelor of Science in Information and Communication Technology">BICT</abbr></h3>
+                 <h3><span>Languages:</span>English and Kiswahili</h3>
+                 <h3><span>Passion and Interests:</span>Web Development , Programming and Cybersecurity</h3>
+                 <h3><span>Values and Goals:</span>Collaboration, Intergrity and Excellence</h3>
+                 <a href="CasResume.docx" download><button class="btn">Download CV <i class="fas fa-download"></i></button></a>
              </div>
              <div class="counter">
                  <div class="box">
@@ -57,29 +60,51 @@
                 <div class="row">
                         <div class="box">
                             <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                            <h3>html</h3>
+                            <h3><abbr title="Hypertext Markup Language">HTML</abbr></h3>
+                          </div>
+                          
+                          <div class="box">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <h3><abbr title="Bootstrap">BOOTSTRAP</abbr></h3>
                           </div>
                           <div class="box">
                             <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                            <h3>css</h3>
+                            <h3><abbr title="Cascading StyleSheet">CSS</abbr></h3>
                           </div>
                         <div class="col-md-6">
                            <div class="box">
                              <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                             <h3>javascript</h3>
+                             <h3><abbr title="JavaScript">JavaScript</abbr></h3>
                            </div>
                            <div class="box">
                             <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                            <h3>Mysql</h3>
+                            <h3>MySql</h3>
                            </div>       
                         </div>                                         
                 </div>
             </div>
           </section> 
-		<section class="contact" id="contact">
+          <section class="projects" id="projects">
+            <h1 class="heading"><span class="about">My</span> Projects</h1>
+            <div class="image-row">
+              <img src="calc.png">
+              <img src="flight.png">
+            </div>
+            
+          </section>
+          <section class="contact" id="contact">
             <h1 class="heading"><span class="about">Contact</span> me</h1>
-            <div class="container">
-              <div class="contact-info">
+            <div class="row">
+              <div class="col">
+                <div class="col">
+                  <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/+254114096574/" target="_blank">WhatsApp</a>
+                  </div>
+                <div class="contact-item">
+                  <i class="fab fa-call"></i>
+                  <a href="tel:+254114096574" target="_blank">Call</a>
+                </div>
                 <div class="contact-item">
                   <i class="fab fa-linkedin"></i>
                   <a href="" target="_blank">LinkedIn</a>
@@ -88,30 +113,24 @@
                   <i class="fab fa-twitter"></i>
                   <a href="https://twitter.com/fidel_castro32/" target="_blank">Twitter</a>
                 </div>
-                
                 <div class="contact-item">
                   <i class="fab fa-instagram"></i>
-                  <a href="https://www.instagram.com/fidel_castro32/" target="_blank">Instagram</a>
+                  <a href="https://www.instagram.com/castro_fidel32/" target="_blank">Instagram</a>
                 </div>
-                <div class="contact-item">
-                  <i class="fab fa-whatsapp"></i>
-                  <a href="https://wa.me/+254114096574/" target="_blank">WhatsApp</a>
-                </div>
-                <div class="contact-item">
-                  <i class="fab fa-call"></i>
-                  <a href="tel:+254114096574" target="_blank">Call me</a>
-
-                </div>
+              </div>  
               </div>
+            </div>
+          </section>
+          
               <form id="contact-form" method="post" action="#">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <a href="mailto:okanga.fidel@gmail.com" target="_blank"> 
-                  <button type="submit" class="btn-primary">Send Message</button>
-                </a>
-                
+                  <button type="button" class="btn-primary" onclick="location.href='mailto:okanga.fidel@gmail.com'">Send Message</button>
+                </a> 
               </form>
+              
             </div>
           </section> 
 	</main>

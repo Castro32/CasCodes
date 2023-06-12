@@ -1,13 +1,14 @@
 * {
-    font-family: "Nunito" sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
+    scroll-behavior: smooth;
 }
 *::selection{
     background-color: lawngreen;
@@ -17,7 +18,7 @@ html{
     font-size: 10px;
     overflow-x: hidden;
 }
-html::webkit ::-webkit-scrollbar{
+html ::-webkit-scrollbar{
     width: 22px;
 }
 html::-webkit-scrollbar-track{
@@ -27,18 +28,19 @@ html::-webkit-scrollbar-thumb{
     background: lawngreen;
 }
 body{
-    position:absolute;
     background: #333 ;
     overflow-x: hidden;
+    margin-left: 10px;
+    padding-bottom: 10px;
 }
 section{
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 16px;
 }
 .btn{
     padding: 5px 48px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 20px;
     border-radius: 50px;
 }
@@ -64,8 +66,8 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 999;
-    height: 80;
+    z-index: 1000;
+    height: 100%;
     width: 400px;
     background: #1a1a1a;
     display: flex;
@@ -77,30 +79,30 @@ header{
 header  .user img{
     height: 180px;
     width: 200px;
-    border-radius: 2px;
+    border-radius: 1px;
     object-fit: cover;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     border: 3px solid lawngreen;
 }
 header  .user .name{
-    font-size: 40px; 
+    font-size: 30px; 
     color: #fff;
 }
 header  .user  .post{
-   font-size: 32px;
+   font-size: 25px;
    color: #fff;
 }
 header .navbar{
-   width: 100%;
-   padding: 1px;
+   width: 80%;
+   padding: 0.5px;
 }
 header  .navbar ul{
     list-style: none;
-    padding: 16px 48px;
+    padding: 2px 5px;
 }
 header  .navbar ul li a{
    display: block;
-   padding: 3px;
+   padding: 1px;
    margin: 20px 0;
    background: #333;
    color: #fff;
@@ -115,14 +117,21 @@ header  .navbar ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    padding: 0 240px;
+    padding: 0 375px;
     padding-left: 500px;
 }
+@media only screen and (max-width: 1024px){
+  .home{
+    padding: 0 100px;
+  }
+}
 .skills .row{
-    display: flexbox;
-    justify-content: left;
+    display: flex;
+    justify-content: inherit;
     font-size: 25px;
     flex-wrap: wrap;
+    padding-bottom: 2px;
+    padding-top: 5px;
 }
 
 .skills .row .box{
@@ -140,33 +149,66 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
+/* Set a width for the image row */
+.image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Set a width and height for the images */
+.image-row img {
+  width: 50%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the section heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Style the "My" part of the heading */
+.about {
+  color: #2b8a3e;
+}
+
+
 .contact .row{
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
 }
 #contact {
     
-    padding: 60px 0;
+    padding: 10px 0;
   }
   .container {
-    max-width: 800px;
+    max-width: 50px;
     margin: 0 auto;
     text-align: center;
   }
   
-  .contact-info {
+  .contact .col {
     display: flex;
+    flex-basis: 75%;
     justify-content: space-between;
+    flex-grow: 1;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 24px;
   }
   
   .contact-item {
-    width: calc(25% - 20px);
-    margin-bottom: 20px;
+    width: calc(20% - 10px);
+    margin-bottom: 4px;
   }
   
   .contact-item i {
@@ -188,39 +230,43 @@ header  .navbar ul li a:hover{
   form {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    padding-top: 0;
+    padding: 10px;
   }
   
   form input,
   form textarea {
     width: 100%;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 4px;
   }
   
   form textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 200px;
   }
   
   form button {
-    background-color: blue;
+    background-color: lawngreen;
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 12px 24px;
+    padding: 12px 0;
     cursor: pointer;
   }
   
   form button:hover {
-    background-color: lawngreen;
+    background-color: blue;
   }
   
 .about .row .counter .box span{
     font-size: 64px;
     color: lawngreen;
+    padding-bottom: 3px;
 }
 .about .row .counter .box h3{
     font-size: 32px;
@@ -241,10 +287,11 @@ header  .navbar ul li a:hover{
 }
 .about .row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
     padding: 10px 0;
+    padding-bottom: 2px;
 }
 .about .row .info{
     flex: 1 1 400px;
@@ -281,73 +328,130 @@ header  .navbar ul li a:hover{
     font-size: 32px;
     color:#fff
 }
-@media only screen and (max-width: 600px) {
-    .heading {
-      font-size: 48px;
-    }
+@media only screen and (max-width: 1024px){
+  .home{
+  padding: 0 100px;
+  position: relative;
+  }
   }
   
-@media only screen and (max-width: 600px) {
-    body {
-      overflow-x: visible;
+  @media only screen and (max-width: 768px){
+  header{
+  width: 50%;
+  height: 50%;
+  }
+  header .user img{
+  height: 150px;
+  width: 150px;
+  margin-bottom: 5px;
+  }
+  header .user .name{
+  font-size: 30px;
+  }
+  header .user .post{
+  font-size: 22px;
+  }
+  header .navbar{
+  padding: 0;
+  }
+  header .navbar ul{
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  }
+  header .navbar ul li{
+  margin: 10px 0;
+  }
+  header .navbar ul li a{
+  margin: 0;
+  padding: 10px;
+  font-size: 28px;
+  }
+  .home{
+  padding: 0 60px;
+  padding-left: 200px;
+  }
+  .skills .row{
+  justify-content: center;
+  }
+  .skills .row .info h3{
+    padding-left: 10px;
+  }
+  .skills .row .box{
+  width: 250px;
+  margin: 5px;
+  }
+  .skills .row .box span{
+  font-size: 48px;
+  }
+  .skills .row .box h3{
+  font-size: 24px;
+  }
+  .contact .row{
+  justify-content: center;
+  }
+  .contact .row .contact-item{
+  width: 50%;
+  }
+  }
+  
+  @media only screen and (max-width: 480px){
+  html{
+  font-size: 8px;
+  }
+  header .user img{
+  height: 120px;
+  width: 120px;
+  }
+  header .user .name{
+  font-size: 24px;
+  }
+  header .user .post{
+  font-size: 18px;
+  }
+  header .navbar ul li a{
+  font-size: 24px;
+  border-radius: 40px;
+  padding: 8px;
+  margin: 10px 0;
+  }
+  .home{
+  padding: 0 20px;
+  padding-left: 80px;
+  }
+  .skills .row{
+  justify-content: center;
+  }
+  .skills .row .box{
+  width: 200px;
+  margin: 5px;
+  }
+  .skills .row .box span{
+  font-size: 32px;
+  }
+  .skills .row .box h3{
+  font-size: 18px;
+  }
+  .contact .row .contact-item{
+  width: 100%;
+  }
+  }
+  @media only screen and (max-width: 768px){
+    header{
+      height: auto;
     }
-    
-    header {
-      width: 100%;
-    }
-    
-    header .navbar ul {
+    header .navbar{
       display: none;
     }
-    
-    header .navbar .menu-icon {
-      display: block;
+    .home{
+      padding-top: 100px;
     }
-    
-    header .navbar .menu-icon i {
-      font-size: 32px;
-      color: #fff;
-    }
-    
-    header .navbar.active ul {
-      display: block;
-      background: #1a1a1a;
-    }
-    
-    header .navbar.active ul li {
-      margin: 10px 0;
-    }
-    
-    header .navbar.active ul li a {
-      font-size: 24px;
-    }
-    
-    .home {
-      padding: 0;
-      padding-left: 100px;
-    }
-    
-    .skills .row {
-      justify-content: center;
-    }
-    
-    .skills .row .box {
-      width: 250px;
-      margin: 10px;
-    }
-    
-    .contact .row {
-      justify-content: center;
-    }
-    
-    .contact .row .contact-item {
-      width: calc(40% - 10px);
-      margin-bottom: 20px;
-    }
-    
-    .about .row .counter .box {
-      width: 250px;
-      margin: 10px;
-    }
+    .about .row .info h3 span{
+        margin-left: 25px;
   }
-  
+  }
+footer{
+  font-size: medium;
+  color: lawngreen;
+  padding: 10px;
+}
