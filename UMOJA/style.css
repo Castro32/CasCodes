@@ -16,7 +16,7 @@ body {
     background-color: grey;
   }
   section{
-    min-height: 10vh;
+    min-height: 60vh;
     padding: 16px;
 }
   .container {
@@ -63,11 +63,12 @@ body {
     text-align: center;
   }
   #home h1 {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   #home h5{
+    font-size: 30px;
     font-weight: bolder;
     font-style: italic;
   }
@@ -139,6 +140,8 @@ body {
   /* Courses section styles */
   #gallery {
     padding:50px 0;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   #gallery h2 {
@@ -168,9 +171,11 @@ body {
   /* Events section styles */
   #events {
     padding: 50px 0;
+    justify-content: center;
   }
   
   #events h2 {
+   
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -252,7 +257,7 @@ body {
   }
   
   footer p {
-    color: #fff;
+    color: blue;
     font-size: 14px;
   }
   
